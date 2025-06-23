@@ -14,10 +14,10 @@ const checkWeather = async (city) => {
         document.querySelector('.weather').style.display = 'none';
     }
 
-    document.querySelector('.city').innerHTML = searchInput.value[0].toUpperCase() + searchInput.value.slice(1);
-    document.querySelector('.temp').innerHTML = Math.round(data.main.temp) + '°C';
-    document.querySelector('.humidity').innerHTML = data.main.humidity + '%';
-    document.querySelector('.wind').innerHTML = data.wind.speed + 'km/h';
+    document.querySelector('.city').innerText = searchInput.value[0].toUpperCase() + searchInput.value.slice(1);
+    document.querySelector('.temp').innerText = Math.round(data.main.temp) + '°C';
+    document.querySelector('.humidity').innerText = data.main.humidity + '%';
+    document.querySelector('.wind').innerText = data.wind.speed + 'km/h';
 
     document.querySelector('.weather').style.display = 'block';
     document.querySelector('.error').style.display = 'none';
