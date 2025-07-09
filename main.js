@@ -32,9 +32,9 @@ const checkWeather = async (city) => {
 }
 
 searchBtn.addEventListener('click', () => {
-        checkWeather(searchInput.value);
+        checkWeather(searchInput.value.trimStart());
 });
 
 searchInput.addEventListener( 'keyup', event => {
-    if(event.code === 'Enter') checkWeather(searchInput.value);
+    if(event.code === 'Enter') checkWeather(searchInput.value.trimStart());
 });
