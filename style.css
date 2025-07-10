@@ -13,13 +13,6 @@ body {
   text-align: center;
   flex-direction: column;
 }
-body .logo {
-  width: 240px;
-}
-body .user {
-  width: 40px;
-  border-radius: 50%;
-}
 body nav {
   background-color: #fdf1dc;
   color: #3C210A;
@@ -31,6 +24,9 @@ body nav {
   align-items: center;
   justify-content: center;
   position: relative;
+}
+body nav .logo {
+  width: 240px;
 }
 body .card {
   width: 90%;
@@ -100,14 +96,16 @@ body .card .weather .weather-icon {
   width: 170px;
   margin-top: 30px;
 }
-body .card .weather h1 {
+body .card .weather .temp {
   font-size: 65px;
   font-weight: 500;
+  user-select: none;
 }
-body .card .weather h2 {
+body .card .weather .city {
   font-size: 45px;
   font-weight: 500;
   margin-top: 10px;
+  user-select: none;
 }
 body .card .weather .details {
   display: flex;
@@ -127,6 +125,9 @@ body .card .weather .details .col img {
 }
 body .card .weather .details .col .humidity, body .card .weather .details .col .wind {
   font-size: 24px;
+}
+body .card .weather .details .col p {
+  user-select: none;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -13,15 +13,6 @@ body {
   text-align: center;
   flex-direction: column;
 
-  .logo {
-    width: 240px;
-  }
-
-  .user {
-    width: 40px;
-    border-radius: 50%;
-  }
-
   nav {
     background-color: #fdf1dc;
     color: #3C210A;
@@ -33,6 +24,10 @@ body {
     align-items: center;
     justify-content: center;
     position: relative;
+
+    .logo {
+      width: 240px;
+    }
   }
 
   .card {
@@ -110,17 +105,20 @@ body {
       .weather-icon {
         width: 170px;
         margin-top: 30px;
+
       }
 
-      h1 {
+      .temp {
         font-size: 65px;
         font-weight: 500;
+        user-select: none;
       }
 
-      h2 {
+      .city {
         font-size: 45px;
         font-weight: 500;
         margin-top: 10px;
+        user-select: none;
       }
 
       .details {
@@ -142,6 +140,10 @@ body {
 
           .humidity, .wind {
             font-size: 24px;
+          }
+
+          p {
+            user-select: none;
           }
         }
       }
