@@ -46,7 +46,7 @@ body {
       align-items: center;
       justify-content: space-between;
 
-      input {
+      #input-city {
         border: 1px solid snow;
         outline: 0;
         background-color: inherit;
@@ -74,7 +74,7 @@ body {
         }
       }
 
-      button {
+      #btn-search {
         border: 0;
         outline: 0;
         background-color: inherit;
@@ -102,10 +102,9 @@ body {
     .weather {
       display: none;
 
-      .weather-icon {
+      #weather-icon {
         width: 170px;
         margin-top: 30px;
-
       }
 
       .temp {

@@ -44,7 +44,7 @@ body .card .search {
   align-items: center;
   justify-content: space-between;
 }
-body .card .search input {
+body .card .search #input-city {
   border: 1px solid snow;
   outline: 0;
   background-color: inherit;
@@ -55,20 +55,20 @@ body .card .search input {
   flex: 1;
   font-size: 18px;
 }
-body .card .search input::placeholder {
+body .card .search #input-city::placeholder {
   color: snow;
 }
-body .card .search input::-webkit-search-cancel-button {
+body .card .search #input-city::-webkit-search-cancel-button {
   -webkit-appearance: none;
   height: 26px;
   width: 26px;
   background: url("images/close.svg") no-repeat center;
   background-size: contain;
 }
-body .card .search input:focus {
+body .card .search #input-city:focus {
   border: 1px solid #EACDA0;
 }
-body .card .search button {
+body .card .search #btn-search {
   border: 0;
   outline: 0;
   background-color: inherit;
@@ -77,7 +77,7 @@ body .card .search button {
   height: 60px;
   cursor: pointer;
 }
-body .card .search button img {
+body .card .search #btn-search img {
   width: 30px;
   height: 30px;
 }
@@ -92,7 +92,7 @@ body .card .error {
 body .card .weather {
   display: none;
 }
-body .card .weather .weather-icon {
+body .card .weather #weather-icon {
   width: 170px;
   margin-top: 30px;
 }
